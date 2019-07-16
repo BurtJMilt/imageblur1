@@ -1,15 +1,15 @@
-class Values
-  attr_accessor :values
+class Binary
+  attr_accessor :binary 
 
-  def initialize(values)
-      @values = values 
+  def initialize(binary)
+      @binary = binary 
   end
 
   def output_image
-      puts "#{@values}"
+      puts "#{@binary}"
   end
 
-values = Array ([
+binary = Array ([
   [0, 0, 0, 0],
   [0, 1, 0, 0],
   [0, 0, 0, 1],
@@ -17,9 +17,9 @@ values = Array ([
 ])
 
 
-    values.each do |values|
+    binary.each do |binary|
 
-      puts values.join(" ")
+      puts binary.join(" ")
   end
   end
   puts "--"
